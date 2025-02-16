@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Surya Rao Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cce7ff;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #a2d2ff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #0077b6;
+        }
+        .contact-button {
+            background: #0077b6;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        .contact-button:hover {
+            background: #005f8a;
+        }
+        .hero {
+            padding: 20px 50px;
+        }
+        .hero img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s ease-in-out;
+        }
+        .hero img:hover {
+            transform: scale(1.2);
+        }
+        .about, .services, .works {
+            padding: 30px;
+            background: #bde0fe;
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            animation:popup  1.5s forwards;
+        }
+        @keyframes popup {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .service-box, .work-box {
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(135deg, #90e0ef, #00b4d8);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s;
+            display: inline-block;
+            margin: 10px;
+        }
+        .service-box:hover, .work-box:hover {
+            transform: scale(1.1);
+        }
+        .service-box img, .work-box img {
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+        }
+        .service-box p, .work-box p {
+            margin-top: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">suryarao</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#works">Works</a>
+            <a class="contact-button" href="#contact">Get in Touch</a>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Hi, I'm <b>Surya Rao Oruganti</b></h1>
+        <p>I'm a UI/UX Designer & Mechanical Engineer from India</p>
+        <img src="C:\Users\Oruga\OneDrive\Desktop\protfolio\WhatsApp Image1.jpg" alt="Surya Rao Oruganti">
+    </section>
+    
+    <section class="about" id="about">
+        <h2>About</h2>
+        <p>I am Suryarao Oruganthi, a dedicated and skilled Mechanical Engineering student at Pragati Engineering College, with a strong foundation in C programming, AutoCAD, Creo Parametric, Python, HTML & CSS, and content writing. Passionate about automation, robotics, and cybersecurity, I have successfully completed internships and workshops that have enhanced my technical expertise.</p>
+    </section>
+    
+    <section class="services" id="services">
+        <h2>Services</h2>
+        <div class="service-box">
+            <img src="C:\Users\Oruga\OneDrive\Desktop\protfolio\WhatsApp Image 2.jpg" alt="UI/UX Designer">
+            <p>UI/UX Designer</p>
+        </div>
+        <div class="service-box">
+            <img src="C:\Users\Oruga\OneDrive\Desktop\protfolio\WhatsApp Image 3.jpg" alt="Web Developing">
+            <p>Web Development</p>
+        </div>
+        <div class="service-box">
+            <img src="C:\Users\Oruga\OneDrive\Desktop\protfolio\WhatsApp Image 4.jpg" alt="Mechanical Design & Manufacturing">
+            <p>Mechanical Design & Manufacturing</p>
+        </div>
+    </section>
+    
+    <section class="works" id="works">
+        <h2>Works</h2>
+        <div class="work-box">
+            <img src="C:\Users\Oruga\OneDrive\Desktop\protfolio\WhatsApIMAGE 6.jpg" alt="GO-KARTING">
+            <p>GO-KARTING  </p>
+        </div>
+        <section class="contact-section" id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/suryaraooruganthi" target="_logio">LinkedIn</a>
+                <a href="https://www.instagram.com/_its__me_surya" target="_logo">Instagram</a>
+                <a href="mailto:your-oruganthisuryarao@gmail.com">Email</a>
+            </div>
+    </section>
+    
+</body>
+</html>
